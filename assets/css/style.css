@@ -1,0 +1,39 @@
+*{
+    font-family: "Times New Roman";
+}
+/*About section*/
+.about-first-block{
+    max-width: 55%;
+    top: 15%;
+}
+.red-border-block{
+    top: 50px;
+    left: 0;
+    width: 58%;
+    height: 80%;
+}
+@media screen and (max-width: 1535px){
+    .about-first-block{
+        top: 4%;
+    }
+    .red-border-block {
+        top: 11px;
+        width: 70%;
+        height: 90%;
+    }
+}
+@media screen and (max-width: 1279px){
+    .about-first-block{
+        max-width: 100%;
+    }
+}
+/*END About section*/
+
+/*Footer*/
+@media screen and (max-width: 1545px) {
+    footer{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+/*END Footer*/
