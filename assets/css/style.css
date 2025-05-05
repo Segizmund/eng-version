@@ -1,6 +1,9 @@
 *{
     font-family: "Times New Roman";
 }
+body{
+background-color: #F5F5F5;
+}
 /*About section*/
 .about-first-block{
     max-width: 55%;
