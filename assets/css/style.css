@@ -4,6 +4,21 @@
 body{
 background-color: #F5F5F5;
 }
+#programmes-btn.active{
+    background-color: #820000;
+}
+#programmes-btn.active h2{
+    color: white;
+}
+#programmes-btn.active  svg{
+    stroke: white;
+}
+.dropdown-block{
+    display: none;
+}
+.dropdown-block.show{
+    display: block;
+}
 /*About section*/
 .about-first-block{
     max-width: 55%;
