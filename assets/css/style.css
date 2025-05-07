@@ -17,6 +17,7 @@ background-color: #F5F5F5;
     display: none;
 }
 .dropdown-block.show{
+    z-index: 9999;
     display: block;
 }
 /*About section*/
