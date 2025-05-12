@@ -10,6 +10,20 @@ body.no-scroll{
         opacity: .4;
     }
 }
+/*style scroll*/
+body::-webkit-scrollbar {
+    width: 5px;
+}
+body::-webkit-scrollbar-track {
+    background: transparent;
+
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #820000;
+    border-radius: 20px;
+    border: 3px solid #820000;
+}
+/*END style scroll*/
 /*Header*/
 .burger-checkbox {
     position: absolute;
@@ -129,3 +143,20 @@ body.no-scroll{
     }
 }
 /*END Footer*/
+/*style scroll to top*/
+.scroll-to-top-box{
+    transition: .3s linear;
+    opacity: 0;
+    z-index: 30;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+.scroll-to-top-box:hover{
+    box-shadow: 0 0 45px 0 rgb(255 0 0);
+}
+.scroll-to-top-btn{
+    background-color: #820000;
+    padding: 10px;
+}
+/*END style scroll to top*/

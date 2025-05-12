@@ -7,6 +7,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const btn = document.getElementById('programmes-btn');
     const dropdown = document.querySelector('.dropdown-block');
 
+    const currentPath = normalizePath(window.location.pathname);
+    const menuItems = document.querySelectorAll('.main-menu > nav > a');
+
+    menuItems.forEach(item => {
+        const itemPath = normalizePath(new URL(item.href, window.location.origin).pathname);
+
+        if (itemPath === currentPath) {
+            item.classList.add('!border-[#C10F1A]');
+        }
+    });
+    function normalizePath(path) {
+        return path.replace(/\/+$/, '').toLowerCase();
+    }
+
     btn.addEventListener('click', (e) => {
         e.stopPropagation();
         btn.classList.toggle('active');
